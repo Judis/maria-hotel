@@ -1,0 +1,52 @@
+/* Clear Sans
+==============================*/
+@font-face {
+    font-family: 'ClearSans';
+    src: url('../fonts/clear-sans/regular/clear-sans.woff2') format('woff2'),
+        url('../fonts/clear-sans/regular/clear-sans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'ClearSans';
+    src: url('../fonts/clear-sans/medium/clear-sans.woff2') format('woff2'),
+        url('../fonts/clear-sans/medium/clear-sans.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+
+/* Source Sans Pro
+==============================*/
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/source-sans-pro/regular/source-sans-pro.woff2') format('woff2'),
+        url('../fonts/source-sans-pro/regular/source-sans-pro.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+/* Source Sans Pro
+==============================*/
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/source-sans-pro/semibold/source-sans-pro.woff2') format('woff2'),
+        url('../fonts/source-sans-pro/semibold/source-sans-pro.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+
+/* Alegreya Sans
+==============================*/
+@font-face {
+    font-family: 'AlegreyaSans';
+    src: url('../fonts/alegreya-sans/medium/alegreya-sans.woff2') format('woff2'),
+        url('../fonts/alegreya-sans/medium/alegreya-sans.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
