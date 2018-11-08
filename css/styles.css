@@ -4250,6 +4250,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
 
     .rooms__carousel .owl-nav {
         width: 1369px;
+        top: 170px;
     }
 
     .rooms__item {
