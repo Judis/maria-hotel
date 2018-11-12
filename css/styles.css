@@ -2738,6 +2738,10 @@ a.special-offers__img:hover ~ .special-offers__cost {
     position: relative;
     height: 180px;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .map-card__img img {

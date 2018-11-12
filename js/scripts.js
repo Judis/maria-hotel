@@ -222,6 +222,7 @@ function initMap() {
             },
             disableDefaultUI: true,
             zoom: 13,
+            icon: './img/icons/marker.svg',
             styles: [
                 {
                     elementType: 'geometry',
@@ -441,9 +442,9 @@ function initMap() {
     const infowindow = new google.maps.InfoWindow();
 
     markerList.forEach(function(item, i) {
-        const content = '<div class="map-card"><div class="map-card__img">'
-            + '<img src="' + item.img + '" alt="' + item.img + '" /></div>'
-            + '<div class="map-card__info"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" alt="spotlight-poi2.png" />'
+        const content = '<div class="map-card"><div class="map-card__img" '
+            + 'style="background-image: url(\'' + item.img + '\');"></div>'
+            + '<div class="map-card__info"><img src="./img/icons/marker.svg" alt="spotlight-poi2.png" />'
             + '<h3 class="map-card__title">' + item.name +'</h3>'
             + '<p class="map-card__text simple-text">From '
             + '<span class="map-card__cost">£' + item.total + '</span>per night'
@@ -452,7 +453,8 @@ function initMap() {
 
         const marker = new google.maps.Marker({
             position: new google.maps.LatLng(item.lat, item.lng),
-            map: multimarkerMap
+            map: multimarkerMap,
+            icon: './img/icons/marker.svg',
         });
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
