@@ -192,13 +192,88 @@
     </header>
 
     <main>
-        <div class="layout layout_img-content">
-            <img
-                class="layout__img"
-                src="./img/templates/blog-post.jpg"
-                alt="blog-post.jpg"
-                >
-        </div>
+        <section class="blog blog_post">
+            <div class="container">
+                <div class="blog-post__wrap blog-post__wrap_same-height">
+                    <div class="blog-post__main-info">
+                        <a class="blog__subtitle" href="/">
+                            ←- Home
+                        </a>
+
+                        <h2 class="blog__title">
+                            Small Single Room
+                        </h2>
+
+                        <span class="blog__date blog__date_dark">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            2 +
+                            <i class="fa fa-child" aria-hidden="true"></i>
+                            1
+                        </span>
+                    </div>
+
+                    <div class="blog-post__details">
+                        <span class="blog-post__total">From £44.15</span>
+                        per night
+                    </div>
+                </div>
+
+                <div class="blog-post__img">
+                    <img
+                        src="./img/templates/blog-post.jpg"
+                        alt="blog-post.jpg"
+                        >
+                </div>
+
+                <div class="blog-post__wrap">
+                    <p class="blog__post-text">
+                        The monkey-rope is found in all whalers; but it was only in the Pequod that the monkey and his holder were ever tied together. This improvement upon the original usage was introduced by no less a man than Stubb.
+                    </p>
+
+                    <div class="room__features">
+                        <h3 class="room-features__title">Features</h3>
+
+                        <ul class="room-features__list">
+                            <li class="room-features__item">
+                                Conditioneer
+                            </li>
+
+                            <li class="room-features__item">
+                                Hair Brush
+                            </li>
+
+                            <li class="room-features__item">
+                                Towel
+                            </li>
+
+                            <li class="room-features__item">
+                                Mini Bar
+                            </li>
+
+                            <li class="room-features__item">
+                                Pet Friendly
+                            </li>
+
+                            <li class="room-features__item">
+                                Sleepwear
+                            </li>
+
+                            <li class="room-features__item">
+                                Shampoo
+                            </li>
+
+                            <li class="room-features__item">
+                                Parking Place
+                            </li>
+
+                            <li class="room-features__item">
+                                Free Wi-Fi
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="room">
             <div class="room__container">
@@ -307,174 +382,16 @@
         <section class="availability">
             <div class="container">
                 <h2 class="availability__title title title_center">
-                    availability
+                    Available Dates
                 </h2>
 
                 <div class="availability__carousel carousel owl-theme owl-carousel js-carousel-availability">
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="January"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="February"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="March"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="April"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="May"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="June"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="July"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="August"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="September"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="October"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="November"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="December"
-                            >
-                    </div>
+                    Date pickers
                 </div>
 
-                <button class="availability__btn btn" type="button">
+                <button class="availability__btn btn btn_gradient" type="button">
                     Book for £134.30 Now
                 </button>
-            </div>
-        </section>
-
-        <section class="blog blog_other blog_transparent">
-            <div class="container">
-                <h2 class="blog__title title">
-                    More offers
-                </h2>
-
-                <div class="blog__list">
-                    <a class="blog__item blog__item_gradient" href="/">
-                        <div class="blog__img">
-                            <img src="./img/templates/about.jpg" alt="">
-                        </div>
-
-                        <div class="blog__hidden">
-                            <div class="blog__hidden-wrap">
-                                <p class="blog__hidden-cost">
-                                    £49.99
-                                </p>
-
-                                <p class="blog__hidden-text">
-                                    Small Cozy Room
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="blog__item blog__item_gradient" href="/">
-                        <div class="blog__img">
-                            <img src="./img/templates/about.jpg" alt="">
-                        </div>
-
-                        <div class="blog__hidden">
-                            <div class="blog__hidden-wrap">
-                                <p class="blog__hidden-cost">
-                                    £49.99
-                                </p>
-
-                                <p class="blog__hidden-text">
-                                    Small Cozy Room
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="blog__item blog__item_gradient" href="/">
-                        <div class="blog__img">
-                            <img src="./img/templates/about.jpg" alt="">
-                        </div>
-
-                        <div class="blog__hidden">
-                            <div class="blog__hidden-wrap">
-                                <p class="blog__hidden-cost">
-                                    £49.99
-                                </p>
-
-                                <p class="blog__hidden-text">
-                                    Small Cozy Room
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
             </div>
         </section>
     </main>

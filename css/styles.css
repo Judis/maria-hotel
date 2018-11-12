@@ -2125,6 +2125,15 @@ a.special-offers__img:hover ~ .special-offers__cost {
     padding-bottom: 40px;
 }
 
+.blog_post .container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
 .blog_other {
     padding-top: 51px;
     padding-bottom: 50px;
@@ -2133,6 +2142,60 @@ a.special-offers__img:hover ~ .special-offers__cost {
 
 .blog_transparent {
     background-color: transparent;
+}
+
+.blog-post__img {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 38px;
+}
+
+.blog-post__img img {
+    max-width: 100%;
+}
+
+.blog-post__details {
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    border-top: 1px solid #EEF0F4;
+    font-size: 14px;
+    color: #A9B0BD;
+}
+
+.blog-post__details:before {
+    position: absolute;
+    top: -4px;
+    right: 12px;
+    transform: rotate(45deg);
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--themes-elements-color);
+    box-shadow: 0 0 0 6px #ffffff, 0 0 0 7px #EEF0F4;
+    content: '';
+}
+
+.blog-post__total {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.blog-post__wrap {
+    font-size: 0;
+}
+
+.blog-post__wrap_same-height {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .blog__hidden {
@@ -2174,12 +2237,20 @@ a.special-offers__img:hover ~ .special-offers__cost {
     margin-bottom: 20px;
 }
 
+.blog_post .blog__title {
+    margin-bottom: 5px;
+}
+
 .blog_other .blog__title {
     margin-bottom: 20px;
 }
 
-.blog__post-text:not(:last-child) {
-    margin-bottom: 42px;
+.blog__post-text {
+    margin-bottom: 16px;
+}
+
+.blog__post-text:last-of-type {
+    margin-bottom: 30px;
 }
 
 .blog__list {
@@ -2295,10 +2366,22 @@ a.special-offers__img:hover ~ .special-offers__cost {
 .blog__subtitle {
     margin-bottom: 12px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .blog__date_desktop {
     display: none;
+}
+
+.blog__date_dark {
+    display: inline-block;
+    padding-top: 15px;
+    opacity: 0.8;
+    color: var(--title-color);
+}
+
+.blog__date_dark:not(:last-of-type) {
+    margin-right: 28px;
 }
 
 .blog__name {
@@ -2318,7 +2401,6 @@ a.special-offers__img:hover ~ .special-offers__cost {
 .blog__btn-title {
     display: inline-block;
     margin-bottom: 32px;
-
     font-size: 18px;
     font-weight: 500;
     color: var(--themes-elements-color);
@@ -2330,10 +2412,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
     display: -ms-flex;
     display: flex;
     justify-content: space-between;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 100%;
 }
 
 .blog__btn {
@@ -2341,6 +2420,10 @@ a.special-offers__img:hover ~ .special-offers__cost {
     min-width: auto;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.blog_post .blog__btn {
+    width: 128px;
 }
 
 .room {
@@ -2379,8 +2462,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
 
 .room__offer {
     margin-bottom: 15px;
-
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--themes-elements-color);
 }
@@ -2439,12 +2521,11 @@ a.special-offers__img:hover ~ .special-offers__cost {
 
 .room-features__title-btn {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .room-features__title-btn-text {
     display: inline-block;
-
     font-size: 16px;
     font-weight: 500;
     vertical-align: baseline;
@@ -2624,7 +2705,11 @@ a.special-offers__img:hover ~ .special-offers__cost {
 }
 
 .availability__btn {
-    min-width: 280px;
+    width: 100%;
+    max-width: 710px;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-bottom: 13px;
 }
 
 .map-card {
@@ -3666,16 +3751,50 @@ a.special-offers__img:hover ~ .special-offers__cost {
         padding-bottom: 75px;
     }
 
+    .blog-post__wrap_same-height {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .blog-post__main-info {
+        display: inline-block;
+        width: 72.9395605%;
+        vertical-align: top;
+    }
+
+    .blog-post__details {
+        display: inline-block;
+        width: 27.0604395%;
+        margin-top: 12px;
+        padding-top: 20px;
+        padding-left: 26px;
+        border-top: none;
+        border-left: 1px solid #EEF0F4;
+        vertical-align: top;
+    }
+
+    .blog-post__details:before {
+        top: 34px;
+        left: -4px;
+    }
+
+    .blog-post__total {
+        display: block;
+        margin-bottom: 2px;
+    }
+
     .blog__title {
         margin-bottom: 20px;
     }
 
     .blog_post .blog__title {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
-    .blog__post-text:not(:last-child) {
-        margin-bottom: 30px;
+    .blog_post .blog__date {
+        padding-top: 0;
+        margin-bottom: 20px;
     }
 
     .blog__list {
@@ -3795,6 +3914,12 @@ a.special-offers__img:hover ~ .special-offers__cost {
         padding: 0;
     }
 
+    .blog_post .blog__btns-wrap {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+    }
+
     .blog__btn {
         padding-top: 16px;
         padding-bottom: 17px;
@@ -3857,7 +3982,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
     }
 
     .room-features__title-btn {
-        margin-bottom: 28px;
+        margin-bottom: 10px;
     }
 
     .room-sidebar__cost {
@@ -4273,6 +4398,11 @@ a.special-offers__img:hover ~ .special-offers__cost {
         display: flex;
     }
 
+    .room-features__item {
+        display: inline-block;
+        width: 33.3333333%;
+    }
+
     .features {
         padding-top: 55px;
         padding-bottom: 66px;
@@ -4524,8 +4654,46 @@ a.special-offers__img:hover ~ .special-offers__cost {
     }
 
     .blog_post {
-        padding-top: 93px;
-        padding-bottom: 56px;
+        padding-top: 50px;
+        padding-bottom: 74px;
+    }
+
+    .blog_post .container {
+        display: block;
+    }
+
+    .blog-post__img {
+        float: left;
+        width: 48.671875%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .blog-post__wrap {
+        float: right;
+        width: 51.328125%;
+        padding-left: 60px;
+    }
+
+    .blog-post__wrap:first-child {
+        padding-top: 20px;
+    }
+
+    .blog-post__wrap_same-height {
+        margin-bottom: 25px;
+    }
+
+    .blog-post__main-info,
+    .blog-post__details {
+        border-bottom: 1px solid #EEF0F4;
+    }
+
+    .blog-post__main-info {
+        padding-bottom: 5px;
+    }
+
+    .blog-post__details {
+        margin-top: 20px;
     }
 
     .blog_other {
@@ -4533,8 +4701,24 @@ a.special-offers__img:hover ~ .special-offers__cost {
         padding-bottom: 65px;
     }
 
+    .blog_post .blog__title {
+        margin-bottom: 14px;
+    }
+
     .blog__title {
         margin-bottom: 20px;
+    }
+
+    .blog__subtitle {
+        margin-bottom: 20px;
+    }
+
+    .blog__date {
+        margin-bottom: 6px;
+    }
+
+    .blog__post-text:last-of-type {
+        margin-bottom: 35px;
     }
 
     .blog__list {
@@ -4627,10 +4811,6 @@ a.special-offers__img:hover ~ .special-offers__cost {
 
     .room__sidebar {
         width: 21.5483872%;
-    }
-
-    .room__features {
-        width: 61.6774193%;
     }
 
     .availability__title {
