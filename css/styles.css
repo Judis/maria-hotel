@@ -634,25 +634,14 @@ select {
     position: relative;
     display: block;
     width: 280px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     border: 1px solid var(--border-additional-color);
-}
-
-.filters__field:first-child {
-    border-radius: 3px 3px 0 0;
-}
-
-.filters__field:not(:first-child) {
-    border-top: none;
-}
-
-.filters__field:last-child {
-    border-radius: 0 0 3px 3px;
+    border-radius: 3px;
 }
 
 .filters__btn {
     width: 100%;
-    padding: 18px 20px;
+    padding: 13px 20px;
     background-color: transparent;
     border: none;
     opacity: 0.5;
@@ -660,6 +649,10 @@ select {
     font-weight: 400;
     text-align: left;
 }
+
+ .fa ~ .filters__btn {
+     padding-left: 45px;
+ }
 
 .filters__btn ~ .fa {
     position: absolute;
@@ -1119,20 +1112,22 @@ select {
     margin-bottom: 40px;
 }
 
+.rooms__title_top-indent {
+    padding-top: 53px;
+}
+
 .rooms_wide .rooms__title {
     margin-bottom: 13px;
 }
 
-.rooms_is-first {
-    padding-top: 151px;
-}
-
 .rooms_higher {
+    padding-top: 0;
     padding-bottom: 37px;
 }
 
-.rooms__map {
-    height: 480px;
+.rooms__map,
+.rooms__map .map {
+    min-height: 480px;
 }
 
 .rooms__text {
@@ -1182,6 +1177,10 @@ select {
 .rooms__item {
     display: block;
     text-decoration: none;
+}
+
+.rooms__item:visited {
+    color: var(--title-color);
 }
 
 .rooms__img {
@@ -1243,6 +1242,12 @@ select {
     padding-bottom: 22px;
 }
 
+.rooms-item__info:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
 .rooms-item__short-info {
     padding-top: 16px;
     padding-bottom: 15px;
@@ -1263,6 +1268,10 @@ select {
     font-family: var(--main-font);
     font-weight: 500;
     text-transform: capitalize;
+}
+
+.rooms__name-ico {
+    margin-bottom: 12px;
 }
 
 .rooms-item__short-info .rooms__name,
@@ -1296,21 +1305,20 @@ select {
 }
 
 .rooms__cost_near {
-    margin-bottom: 10px;
+    float: left;
+    margin-bottom: 0;
 }
 
 .rooms__price {
     display: inline-block;
     padding-right: 7px;
-
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .rooms__unit {
     display: inline-block;
-
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
 }
 
@@ -1332,6 +1340,8 @@ select {
     display: block;
     padding-left: 26px;
     line-height: 1.8;
+    font-size: 16px;
+    color: #A7B4C8;
 }
 
 .rooms-list__item:not(:last-child) {
@@ -1340,14 +1350,23 @@ select {
 
 .rooms-list__item_no-marker .fa {
     position: absolute;
-    top: 4px;
+    top: 7px;
     left: 2px;
     font-size: 16px;
-    color: var(--themes-elements-color);
+    color: #A7B4C8;
 }
 
 .rooms__link {
+    position: relative;
+    top: 1px;
+    float: right;
     display: inline-block;
+    color: #A7B4C8;
+    font-size: 16px;
+}
+
+.rooms__item:hover .rooms__link {
+    color: var(--themes-elements-color);
 }
 
 .features {
@@ -1781,7 +1800,8 @@ a.special-offers__img:hover ~ .special-offers__cost {
 }
 
 .map {
-    height: 230px;
+    min-height: 230px;
+    height: 100%;
 }
 
 .contact-us__container {
@@ -2904,7 +2924,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
     }
 
     .nav__list-wrap {
-        top: 62px;
+        top: 63px;
         width: 241px;
         border: none;
     }
@@ -2921,24 +2941,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
     .filters__field {
         display: inline-block;
         width: 200px;
-    }
-
-    .filters__field:first-child {
-        border-radius: 3px 0 0 3px;
-    }
-
-    .filters__field:not(:first-child) {
-        border-top: 1px solid var(--border-additional-color);
-        border-left: none;
-    }
-
-    .filters__field:first-of-type:last-of-type {
-        border-radius: 3px;
-        border-left: 1px solid var(--border-additional-color);
-    }
-
-    .filters__field:last-child {
-        border-radius: 0 3px 3px 0;
+        margin-right: 20px;
     }
 
     .layout {
@@ -3134,16 +3137,27 @@ a.special-offers__img:hover ~ .special-offers__cost {
     }
 
     .rooms_is-first {
-        padding-top: 211px;
         padding-bottom: 28px;
     }
 
     .rooms_higher {
+        padding-top: 0;
         padding-bottom: 47px;
     }
 
-    .rooms__map {
-        height: 720px;
+    .rooms__map,
+    .rooms__map .map {
+        min-height: 720px;
+    }
+
+    .rooms__map_lower,
+    .rooms__map_lower .map {
+        min-height: 350px;
+    }
+
+    .rooms__map_average,
+    .rooms__map_average .map {
+        min-height: 500px;
     }
 
     .rooms__title {
@@ -3190,6 +3204,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
     .rooms__carousel > .rooms__item {
         display: inline-block;
         width: 50%;
+        margin-bottom: 16px;
         padding-left: 8px;
         padding-right: 8px;
         vertical-align: top;
@@ -3222,8 +3237,16 @@ a.special-offers__img:hover ~ .special-offers__cost {
         margin-bottom: 13px;
     }
 
+    .rooms__name-ico {
+        margin-bottom: 13px;
+    }
+
     .rooms__cost {
         margin-bottom: 20px;
+    }
+
+    .rooms__cost_near {
+        margin-bottom: 0;
     }
 
     .rooms__unit {
@@ -3240,6 +3263,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
         display: block;
         padding-left: 26px;
         line-height: 1.8;
+        font-size: 16px;
     }
 
     .rooms-list__item:not(:last-child) {
@@ -3265,10 +3289,9 @@ a.special-offers__img:hover ~ .special-offers__cost {
 
     .rooms-list__item_no-marker .fa {
         position: absolute;
-        top: 4px;
+        top: 7px;
         left: 2px;
         font-size: 16px;
-        color: var(--themes-elements-color);
     }
 
     .rooms-list__item b {
@@ -4304,11 +4327,12 @@ a.special-offers__img:hover ~ .special-offers__cost {
     }
 
     .rooms_is-first {
-        padding-top: 231px;
+        padding-top: 70px;
         padding-bottom: 36px;
     }
 
     .rooms_higher {
+        padding-top: 0;
         padding-bottom: 74px;
     }
 
@@ -4324,8 +4348,19 @@ a.special-offers__img:hover ~ .special-offers__cost {
         display: block;
     }
 
-    .rooms__map {
-        height: 840px;
+    .rooms__map,
+    .rooms__map .map {
+        min-height: 840px;
+    }
+
+    .rooms__map_lower,
+    .rooms__map_lower .map {
+        min-height: 350px;
+    }
+
+    .rooms__map_average,
+    .rooms__map_average .map {
+        min-height: 500px;
     }
 
     .rooms__title {
@@ -4370,6 +4405,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
 
     .rooms__carousel > .rooms__item {
         width: 33.3333333%;
+        margin-bottom: 28px;
         padding-left: 14px;
         padding-right: 14px;
     }
@@ -4426,10 +4462,6 @@ a.special-offers__img:hover ~ .special-offers__cost {
 
     .special-offers__carousel {
         margin-bottom: 56px;
-    }
-
-    .special-offers__item:not(:last-of-type) {
-        margin-bottom: 67px;
     }
 
     .special-offers__img {

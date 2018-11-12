@@ -1,9 +1,3 @@
 <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9997 13.2044V4.32351L21.6553 4.62505V2.94112L0.351562 0.48877V2.20605L2.99967 2.50674V13.2044H13.6652V8.22616H17.0051V13.2044H18.9997ZM7.61433 5.31272L4.99598 4.99304V11.3388L7.61433 11.3307V5.31272ZM9.0026 5.48222L11.5676 5.79538V11.3185L9.0026 11.3264V5.48222Z" fill="url(#paint0_linear)" fill-opacity="0.95"/>
-<defs>
-<linearGradient id="paint0_linear" x1="0.351562" y1="13.2044" x2="21.6553" y2="13.2044" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFB32D"/>
-<stop offset="1" stop-color="#F28248"/>
-</linearGradient>
-</defs>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 13.7044V4.82345L21.6556 5.12499V3.44106L0.351891 0.988714V2.706L3 3.00669V13.7044H13.6655V8.7261H17.0054V13.7044H19ZM7.61466 5.81267L4.99631 5.49299V11.8387L7.61466 11.8306V5.81267ZM9.00293 5.98217L11.5679 6.29533V11.8185L9.00293 11.8264V5.98217Z" fill="#5D687A"/>
 </svg>

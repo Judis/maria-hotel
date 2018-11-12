@@ -283,7 +283,7 @@ function initMap() {
                 {
                     featureType: 'water',
                     elementType: 'geometry',
-                    stylers: [{color: '#FEE2C4'}]
+                    stylers: [{color: '#ffffff'}]
                 },
                 {
                     featureType: 'water',
@@ -293,7 +293,7 @@ function initMap() {
                 {
                     featureType: 'water',
                     elementType: 'labels.text.stroke',
-                    stylers: [{color: '#FEE2C4'}]
+                    stylers: [{color: '#ffffff'}]
                 }
             ]
         });
@@ -322,11 +322,11 @@ function initMap() {
         styles: [
             {
                 elementType: 'geometry',
-                stylers: [{color: '#ffffff'}]
+                stylers: [{color: '#eeeeee'}]
             },
             {
                 elementType: 'labels.text.stroke',
-                stylers: [{color: 'transparent'}]
+                stylers: [{color: '#eeeeee'}]
             },
             {
                 elementType: 'labels.text.fill',
@@ -345,7 +345,7 @@ function initMap() {
             {
                 featureType: 'poi.park',
                 elementType: 'geometry',
-                stylers: [{color: '#ffffff'}]
+                stylers: [{color: '#eeeeee'}]
             },
             {
                 featureType: 'poi.park',
@@ -355,32 +355,32 @@ function initMap() {
             {
                 featureType: 'road',
                 elementType: 'geometry',
-                stylers: [{color: '#eeeeee'}]
+                stylers: [{color: '#ffffff'}]
             },
             {
                 featureType: 'road',
                 elementType: 'geometry.stroke',
-                stylers: [{color: '#eeeeee'}]
+                stylers: [{color: '#ffffff'}]
             },
             {
                 featureType: 'road.highway',
                 elementType: 'geometry',
-                stylers: [{color: '#eeeeee'}]
+                stylers: [{color: '#ffffff'}]
             },
             {
                 featureType: 'road.highway',
                 elementType: 'geometry.stroke',
-                stylers: [{color: '#eeeeee'}]
+                stylers: [{color: '#ffffff'}]
             },
             {
                 featureType: 'transit',
                 elementType: 'geometry',
-                stylers: [{color: '#eeeeee'}]
+                stylers: [{color: '#ffffff'}]
             },
             {
                 featureType: 'water',
                 elementType: 'geometry',
-                stylers: [{color: '#FEE2C4'}]
+                stylers: [{color: '#ffffff'}]
             },
             {
                 featureType: 'water',
@@ -390,7 +390,7 @@ function initMap() {
             {
                 featureType: 'water',
                 elementType: 'labels.text.stroke',
-                stylers: [{color: '#FEE2C4'}]
+                stylers: [{color: '#ffffff'}]
             }
         ]
     });

@@ -194,80 +194,54 @@
 
     <main>
         <section class="layout">
+            <div class="layout__top"></div>
             <div class="layout__wrap">
-                <div class="container">
-                    <h1 class="layout__title">
-                        Simple Cozy Hotel
-                    </h1>
+                <h1 class="layout__title title title_center">
+                    Visit the Best Hotel in Santorini
+                </h1>
 
-                    <p class="layout__text">
-                        So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions. I seemed distinctly to perceive that my own individuality was now merged!
-                    </p>
+                <p class="layout__text">
+                    Tousled food truck polaroid, salvia bespoke small batch Pinterest Marfa. Fingerstache authentic craft beer!
+                </p>
 
-                    <form
-                        class="layout__form"
-                        action="index.html"
-                        method="post"
-                        >
+                <div class="divider"></div>
 
-                        <label class="layout-form__el btn btn_transparent">
-                            <i class="layout-form__ico fa fa-calendar" aria-hidden="true"></i>
+                <form
+                    class="layout__form"
+                    action="index.html"
+                    method="post"
+                    >
 
-                            <input
-                                class="layout-form__field js-datepickr"
-                                type="date"
-                                name="checkin"
-                                placeholder="Check-In"
-                                >
-                        </label>
+                    <label class="layout-form__el btn btn_simple">
+                        <i class="layout-form__ico fa fa-calendar" aria-hidden="true"></i>
 
-                        <label class="layout-form__el btn btn_transparent">
-                            <i class="layout-form__ico fa fa-calendar" aria-hidden="true"></i>
-
-                            <input
-                                class="layout-form__field js-datepickr"
-                                type="date"
-                                name="checkout"
-                                placeholder="Check-Out"
-                                >
-                        </label>
-
-                        <button
-                            class="layout__btn btn btn_gradient"
-                            type="submit"
-                            name="button"
+                        <input
+                            class="layout-form__field js-datepickr"
+                            type="date"
+                            name="checkin"
+                            placeholder="Check-In"
                             >
-                            Check Rooms
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
+                    </label>
 
-        <section class="about">
-            <div class="container">
-                <div class="about__right">
-                    <div class="about__img">
-                        <img src="./img/templates/about.jpg" alt="about.jpg">
-                    </div>
-                </div>
+                    <label class="layout-form__el btn btn_simple">
+                        <i class="layout-form__ico fa fa-calendar" aria-hidden="true"></i>
 
-                <div class="about__left">
-                    <h2 class="about__title title">
-                        About us
-                    </h2>
+                        <input
+                            class="layout-form__field js-datepickr"
+                            type="date"
+                            name="checkout"
+                            placeholder="Check-Out"
+                            >
+                    </label>
 
-                    <p class="about__text">
-                        So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions. I seemed distinctly to perceive that my own individuality was now merged!
-                    </p>
-
-                    <a
-                        class="btn btn_simple"
-                        href="/"
+                    <button
+                        class="layout__btn btn btn_gradient"
+                        type="submit"
+                        name="button"
                         >
-                        Learn more
-                    </a>
-                </div>
+                        See hotels
+                    </button>
+                </form>
             </div>
         </section>
 
@@ -516,13 +490,10 @@
                 </div>
 
                 <div class="rooms__carousel rooms__carousel_no-margin">
-                    <div class="rooms__item">
-                        <a class="rooms__img" href="/">
+                    <a class="rooms__item" href="/">
+                        <div class="rooms__img">
                             <img src="./img/templates/rooms(1).jpg" alt="rooms(1).jpg">
-                            <div class="rooms-img__cover">
-                                <p class="rooms-img-cover__text">See more</p>
-                            </div>
-                        </a>
+                        </div>
 
                         <div class="rooms-item__info">
                             <img
@@ -535,12 +506,6 @@
                                 Small Single Room
                             </h3>
 
-                            <div class="rooms__cost rooms__cost_near">
-                                <span class="rooms__unit">From</span>
-                                <span class="rooms__price">£65.99</span>
-                                <span class="rooms__unit">per night</span>
-                            </div>
-
                             <ul class="rooms__list rooms__list_visible">
                                 <li class="rooms-list__item rooms-list__item_no-marker simple-text">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -549,21 +514,20 @@
                                 </li>
                             </ul>
 
-                            <a class="rooms__link link" href="/">More info</a>
-                        </div>
-
-                        <button class="btn btn_wide btn_gradient" type="button">
-                            BOOK NOW
-                        </button>
-                    </div>
-
-                    <div class="rooms__item">
-                        <a class="rooms__img" href="/">
-                            <img src="./img/templates/rooms(2).jpg" alt="rooms(2).jpg">
-                            <div class="rooms-img__cover">
-                                <p class="rooms-img-cover__text">See more</p>
+                            <div class="rooms__cost rooms__cost_near">
+                                <span class="rooms__unit">From</span>
+                                <span class="rooms__price">£65.99</span>
+                                <span class="rooms__unit">per night</span>
                             </div>
-                        </a>
+
+                            <span class="rooms__link link">See more -→</span>
+                        </div>
+                    </a>
+
+                    <a class="rooms__item" href="/">
+                        <div class="rooms__img">
+                            <img src="./img/templates/rooms(2).jpg" alt="rooms(2).jpg">
+                        </div>
 
                         <div class="rooms-item__info">
                             <img
@@ -576,12 +540,6 @@
                                 Small Single Room
                             </h3>
 
-                            <div class="rooms__cost rooms__cost_near">
-                                <span class="rooms__unit">From</span>
-                                <span class="rooms__price">£65.99</span>
-                                <span class="rooms__unit">per night</span>
-                            </div>
-
                             <ul class="rooms__list rooms__list_visible">
                                 <li class="rooms-list__item rooms-list__item_no-marker simple-text">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -590,21 +548,20 @@
                                 </li>
                             </ul>
 
-                            <a class="rooms__link link" href="/">More info</a>
-                        </div>
-
-                        <button class="btn btn_wide btn_gradient" type="button">
-                            BOOK NOW
-                        </button>
-                    </div>
-
-                    <div class="rooms__item">
-                        <a class="rooms__img" href="/">
-                            <img src="./img/templates/rooms(3).jpg" alt="rooms(3).jpg">
-                            <div class="rooms-img__cover">
-                                <p class="rooms-img-cover__text">See more</p>
+                            <div class="rooms__cost rooms__cost_near">
+                                <span class="rooms__unit">From</span>
+                                <span class="rooms__price">£65.99</span>
+                                <span class="rooms__unit">per night</span>
                             </div>
-                        </a>
+
+                            <span class="rooms__link link">See more -→</span>
+                        </div>
+                    </a>
+
+                    <a class="rooms__item" href="/">
+                        <div class="rooms__img">
+                            <img src="./img/templates/rooms(3).jpg" alt="rooms(3).jpg">
+                        </div>
 
                         <div class="rooms-item__info">
                             <img
@@ -617,12 +574,6 @@
                                 Small Single Room
                             </h3>
 
-                            <div class="rooms__cost rooms__cost_near">
-                                <span class="rooms__unit">From</span>
-                                <span class="rooms__price">£65.99</span>
-                                <span class="rooms__unit">per night</span>
-                            </div>
-
                             <ul class="rooms__list rooms__list_visible">
                                 <li class="rooms-list__item rooms-list__item_no-marker simple-text">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -631,21 +582,20 @@
                                 </li>
                             </ul>
 
-                            <a class="rooms__link link" href="/">More info</a>
-                        </div>
-
-                        <button class="btn btn_wide btn_gradient" type="button">
-                            BOOK NOW
-                        </button>
-                    </div>
-
-                    <div class="rooms__item">
-                        <a class="rooms__img" href="/">
-                            <img src="./img/templates/rooms(1).jpg" alt="rooms(1).jpg">
-                            <div class="rooms-img__cover">
-                                <p class="rooms-img-cover__text">See more</p>
+                            <div class="rooms__cost rooms__cost_near">
+                                <span class="rooms__unit">From</span>
+                                <span class="rooms__price">£65.99</span>
+                                <span class="rooms__unit">per night</span>
                             </div>
-                        </a>
+
+                            <span class="rooms__link link">See more -→</span>
+                        </div>
+                    </a>
+
+                    <a class="rooms__item" href="/">
+                        <div class="rooms__img">
+                            <img src="./img/templates/rooms(1).jpg" alt="rooms(1).jpg">
+                        </div>
 
                         <div class="rooms-item__info">
                             <img
@@ -658,12 +608,6 @@
                                 Small Single Room
                             </h3>
 
-                            <div class="rooms__cost rooms__cost_near">
-                                <span class="rooms__unit">From</span>
-                                <span class="rooms__price">£65.99</span>
-                                <span class="rooms__unit">per night</span>
-                            </div>
-
                             <ul class="rooms__list rooms__list_visible">
                                 <li class="rooms-list__item rooms-list__item_no-marker simple-text">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -672,21 +616,20 @@
                                 </li>
                             </ul>
 
-                            <a class="rooms__link link" href="/">More info</a>
-                        </div>
-
-                        <button class="btn btn_wide btn_gradient" type="button">
-                            BOOK NOW
-                        </button>
-                    </div>
-
-                    <div class="rooms__item">
-                        <a class="rooms__img" href="/">
-                            <img src="./img/templates/rooms(2).jpg" alt="rooms(2).jpg">
-                            <div class="rooms-img__cover">
-                                <p class="rooms-img-cover__text">See more</p>
+                            <div class="rooms__cost rooms__cost_near">
+                                <span class="rooms__unit">From</span>
+                                <span class="rooms__price">£65.99</span>
+                                <span class="rooms__unit">per night</span>
                             </div>
-                        </a>
+
+                            <span class="rooms__link link">See more -→</span>
+                        </div>
+                    </a>
+
+                    <a class="rooms__item" href="/">
+                        <div class="rooms__img">
+                            <img src="./img/templates/rooms(2).jpg" alt="rooms(2).jpg">
+                        </div>
 
                         <div class="rooms-item__info">
                             <img
@@ -699,12 +642,6 @@
                                 Small Single Room
                             </h3>
 
-                            <div class="rooms__cost rooms__cost_near">
-                                <span class="rooms__unit">From</span>
-                                <span class="rooms__price">£65.99</span>
-                                <span class="rooms__unit">per night</span>
-                            </div>
-
                             <ul class="rooms__list rooms__list_visible">
                                 <li class="rooms-list__item rooms-list__item_no-marker simple-text">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -713,21 +650,20 @@
                                 </li>
                             </ul>
 
-                            <a class="rooms__link link" href="/">More info</a>
-                        </div>
-
-                        <button class="btn btn_wide btn_gradient" type="button">
-                            BOOK NOW
-                        </button>
-                    </div>
-
-                    <div class="rooms__item">
-                        <a class="rooms__img" href="/">
-                            <img src="./img/templates/rooms(3).jpg" alt="rooms(3).jpg">
-                            <div class="rooms-img__cover">
-                                <p class="rooms-img-cover__text">See more</p>
+                            <div class="rooms__cost rooms__cost_near">
+                                <span class="rooms__unit">From</span>
+                                <span class="rooms__price">£65.99</span>
+                                <span class="rooms__unit">per night</span>
                             </div>
-                        </a>
+
+                            <span class="rooms__link link">See more -→</span>
+                        </div>
+                    </a>
+
+                    <a class="rooms__item" href="/">
+                        <div class="rooms__img">
+                            <img src="./img/templates/rooms(3).jpg" alt="rooms(3).jpg">
+                        </div>
 
                         <div class="rooms-item__info">
                             <img
@@ -740,12 +676,6 @@
                                 Small Single Room
                             </h3>
 
-                            <div class="rooms__cost rooms__cost_near">
-                                <span class="rooms__unit">From</span>
-                                <span class="rooms__price">£65.99</span>
-                                <span class="rooms__unit">per night</span>
-                            </div>
-
                             <ul class="rooms__list rooms__list_visible">
                                 <li class="rooms-list__item rooms-list__item_no-marker simple-text">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -754,165 +684,26 @@
                                 </li>
                             </ul>
 
-                            <a class="rooms__link link" href="/">More info</a>
-                        </div>
+                            <div class="rooms__cost rooms__cost_near">
+                                <span class="rooms__unit">From</span>
+                                <span class="rooms__price">£65.99</span>
+                                <span class="rooms__unit">per night</span>
+                            </div>
 
-                        <button class="btn btn_wide btn_gradient" type="button">
-                            BOOK NOW
-                        </button>
-                    </div>
+                            <span class="rooms__link link">See more -→</span>
+                        </div>
+                    </a>
                 </div>
-
-                <a class="btn btn_simple" href="/">
-                    Check all hotels
-                </a>
-            </div>
-        </section>
-
-        <section class="special-offers">
-            <div class="container">
-                <h2 class="special-offers__title title title_center">
-                    SPECIAL OFFERS
-                </h2>
-
-                <div class="special-offers__carousel carousel owl-theme owl-carousel js-mobile-carousel">
-                    <div class="special-offers__item item">
-                        <div class="special-offers__img">
-                            <img src="./img/templates/special-offers(1).jpg" alt="special-offers(1).jpg">
-                        </div>
-
-                        <div class="special-offers__info">
-                            <h3 class="special-offers__name">
-                                Suite It Up
-                            </h3>
-
-                            <p class="special-offers__text simple-text">
-                                Stay one night in a suite and the next is 40% off. For every night you pay the regular rate, you can get the next night 40% off. So stay 2 nights, 4 nights or more, and live it up in a suite…
-                            </p>
-
-                            <span class="special-offers__data">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                15 May – 29 Aug
-                            </span>
-
-                            <a class="link" href="/">More info</a>
-                        </div>
-
-                        <div class="special-offers__cost">
-                            <span class="special-offers-cost__text">
-                                From
-                            </span>
-
-                            <span class="special-offers__price">
-                                £44.15
-                            </span>
-
-                            <span class="special-offers-cost__text">
-                                per night
-                            </span>
-
-                            <button class="special-offers-cost__btn btn btn_gradient" type="button">
-                                Book now
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="special-offers__item item">
-                        <div class="special-offers__img">
-                            <img src="./img/templates/special-offers(2).jpg" alt="special-offers(2).jpg">
-                        </div>
-
-                        <div class="special-offers__info">
-                            <h3 class="special-offers__name">
-                                Suite It Up
-                            </h3>
-
-                            <p class="special-offers__text simple-text">
-                                Stay one night in a suite and the next is 40% off. For every night you pay the regular rate, you can get the next night 40% off. So stay 2 nights, 4 nights or more, and live it up in a suite…
-                            </p>
-
-                            <span class="special-offers__data">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                15 May – 29 Aug
-                            </span>
-
-                            <a class="link" href="/">More info</a>
-                        </div>
-
-                        <div class="special-offers__cost">
-                            <span class="special-offers-cost__text">
-                                From
-                            </span>
-
-                            <span class="special-offers__price">
-                                £44.15
-                            </span>
-
-                            <span class="special-offers-cost__text">
-                                per night
-                            </span>
-
-                            <button class="special-offers-cost__btn btn btn_gradient" type="button">
-                                Book now
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="special-offers__item item">
-                        <div class="special-offers__img">
-                            <img src="./img/templates/special-offers(3).jpg" alt="special-offers(3).jpg">
-                        </div>
-
-                        <div class="special-offers__info">
-                            <h3 class="special-offers__name">
-                                Suite It Up
-                            </h3>
-
-                            <p class="special-offers__text simple-text">
-                                Stay one night in a suite and the next is 40% off. For every night you pay the regular rate, you can get the next night 40% off.
-                            </p>
-
-                            <span class="special-offers__data">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                15 May – 29 Aug
-                            </span>
-
-                            <a class="link" href="/">More info</a>
-                        </div>
-
-                        <div class="special-offers__cost">
-                            <span class="special-offers-cost__text">
-                                From
-                            </span>
-
-                            <span class="special-offers__price">
-                                £44.15
-                            </span>
-
-                            <span class="special-offers-cost__text">
-                                per night
-                            </span>
-
-                            <button class="special-offers-cost__btn btn btn_gradient" type="button">
-                                Book now
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <a class="btn btn_simple" href="/">
-                    Check all offers
-                </a>
             </div>
         </section>
 
         <section class="testimonials">
             <div class="container container_wide">
                 <h2 class="testimonials__title title title_center">
-                    Testimonials
+                    Our Clients Say
                 </h2>
 
-                <div class="testimonials__carousel carousel owl-theme owl-carousel js-carousel">
+                <div class="testimonials__carousel carousel owl-theme owl-carousel js-carousel-wide">
                     <div class="testimonials__item item">
                         <p class="testimonials-carousel__text simple-text">
                             Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. Meggings cred before they sold out messenger bag!
@@ -967,197 +758,6 @@
                         <span class="testimonials__author">
                             actor, DC Comics
                         </span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-us">
-            <div class="contact-us__map">
-                <div class="map" id="map"></div>
-            </div>
-
-            <div class="contact-us__container">
-                <div class="contact-us__wrap">
-                    <button
-                        class="contact-us__btn btn btn_simple btn_circle-patch js-show-next-block"
-                        type="button"
-                        >
-
-                        <span class="btn__text">
-                            Get in touch
-                        </span>
-
-                        <i class="btn__ico fa fa-chevron-right" aria-hidden="true"></i>
-                    </button>
-
-                    <h2 class="contact-us__title title">
-                        Contact Us
-                    </h2>
-
-                    <div class="block-list js-block-list">
-                        <div class="contact-us__content block-list__el js-block js-scroll is-open">
-                            <h3 class="contact-us__content-title">
-                                Light Prairie Resort
-                            </h3>
-
-                            <ul class="contact-us__addresses">
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        1 Station Rd, Moffat DG10 9NU
-                                    </span>
-                                </li>
-
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        +66 (0) 76 352 148
-                                    </span>
-                                </li>
-                            </ul>
-
-                            <h3 class="contact-us__content-title">
-                                Prism Hotel
-                            </h3>
-
-                            <ul class="contact-us__addresses">
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        51/7 Moo 6, T.Kohkaew, A Muang, Phuket 83200, Thailand
-                                    </span>
-                                </li>
-
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        +66 (0) 76 352 148
-                                    </span>
-                                </li>
-                            </ul>
-
-                            <h3 class="contact-us__content-title">
-                                Queen's Heights Hotel & Spa
-                            </h3>
-
-                            <ul class="contact-us__addresses">
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        5 Boundary Cl, Midsomer Norton, Radstock BA3 4XB
-                                    </span>
-                                </li>
-
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        +66 (0) 76 352 148
-                                    </span>
-                                </li>
-                            </ul>
-
-                            <h3 class="contact-us__content-title">
-                                Light Prairie Resort
-                            </h3>
-
-                            <ul class="contact-us__addresses">
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        1 Station Rd, Moffat DG10 9NU
-                                    </span>
-                                </li>
-
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        +66 (0) 76 352 148
-                                    </span>
-                                </li>
-                            </ul>
-
-                            <h3 class="contact-us__content-title">
-                                Light Prairie Resort
-                            </h3>
-
-                            <ul class="contact-us__addresses">
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        1 Station Rd, Moffat DG10 9NU
-                                    </span>
-                                </li>
-
-                                <li class="contact-us__addresses-info">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-
-                                    <span class="simple-text">
-                                        +66 (0) 76 352 148
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <form class="contact-us__form block-list__el js-block">
-                            <div class="contact-us__field-wrap">
-                                <input
-                                    class="contact-us__field"
-                                    type="email"
-                                    placeholder="E-Mail"
-                                    >
-
-                                <input
-                                    class="contact-us__field"
-                                    type="name"
-                                    placeholder="First Name"
-                                    >
-                            </div>
-
-                            <textarea
-                                class="contact-us__textarea"
-                                name="name"
-                                placeholder="Text your message here…"
-                            ></textarea>
-
-                            <div class="filters__option contact-us__checkbox">
-                                <input
-                                    class="filters__checkbox"
-                                    type="checkbox"
-                                    name="test"
-                                    value=""
-                                    id="country-2"
-                                    >
-
-                                <div class="filters__gauge filters__gauge_high">
-                                    <i class="fa fa-check" aria-hidden="true"></i>
-                                </div>
-
-                                <label
-                                    class="filters__name"
-                                    for="country-2"
-                                    >
-                                    I’m not a robot
-                                </label>
-                            </div>
-
-                            <button
-                                class="contact-us__form-btn btn"
-                                type="button"
-                                name="button"
-                                >
-                                Send message
-                            </button>
-                        </form>
                     </div>
                 </div>
             </div>

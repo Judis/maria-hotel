@@ -192,114 +192,94 @@
     </header>
 
     <main>
-        <div class="layout layout_img-content">
-            <img
-                class="layout__img"
-                src="./img/templates/blog-post.jpg"
-                alt="blog-post.jpg"
-                >
-        </div>
+        <section class="blog blog_post">
+            <div class="container">
+                <div class="blog-post__wrap blog-post__wrap_same-height">
+                    <div class="blog-post__main-info">
+                        <a class="blog__subtitle" href="/">
+                            ←- Home
+                        </a>
 
-        <section class="room">
-            <div class="room__container">
-                <div class="room__content">
-                    <span class="room__subtitle">
-                        ROOMS & SERVICES
-                    </span>
+                        <h2 class="blog__title">
+                            Small Single Room
+                        </h2>
 
-                    <h2 class="room__title title">
-                        Small Single Room
-                    </h2>
+                        <span class="blog__date blog__date_dark">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            2 +
+                            <i class="fa fa-child" aria-hidden="true"></i>
+                            1
+                        </span>
+                    </div>
 
-                    <p class="room__text">
+                    <div class="blog-post__details">
+                        <span class="blog-post__total">From £44.15</span>
+                        per night
+                    </div>
+                </div>
+
+                <div class="blog-post__img">
+                    <img
+                        src="./img/templates/blog-post.jpg"
+                        alt="blog-post.jpg"
+                        >
+                </div>
+
+                <div class="blog-post__wrap">
+                    <p class="blog__post-text">
                         The monkey-rope is found in all whalers; but it was only in the Pequod that the monkey and his holder were ever tied together. This improvement upon the original usage was introduced by no less a man than Stubb.
                     </p>
 
-                    <p class="room__text">
-                        Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby.
-                    </p>
-                </div>
+                    <div class="room__features">
+                        <h3 class="room-features__title">Features</h3>
 
-                <div class="room__sidebar">
-                    <div class="room-sidebar__cost">
-                        <p class="room-sidebar__text">
-                            From
-                            <span class="room-sidebar__total">£44.15</span>
-                            per night
-                        </p>
+                        <ul class="room-features__list">
+                            <li class="room-features__item">
+                                <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                                Parking
+                            </li>
+
+                            <li class="room-features__item">
+                                <i class="fa fa-paw" aria-hidden="true"></i>
+                                Pet Friendly
+                            </li>
+
+                            <li class="room-features__item">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                Shopping
+                            </li>
+
+                            <li class="room-features__item">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                Free Wi-Fi
+                            </li>
+
+                            <li class="room-features__item">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                Porter
+                            </li>
+
+                            <li class="room-features__item">
+                                <i class="fa fa-plane" aria-hidden="true"></i>
+                                Airport Transit
+                            </li>
+
+                            <li class="room-features__item">
+                                <i class="fa fa-glass" aria-hidden="true"></i>
+                                Mini Bar
+                            </li>
+
+                            <li class="room-features__item">
+                                <i class="fa fa-thermometer-empty" aria-hidden="true"></i>
+                                Conditioneer
+                            </li>
+
+                            <li class="room-features__item">
+                                <i class="fa fa-umbrella" aria-hidden="true"></i>
+                                Umbrella
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="room-sidebar__place">
-                        <span class="room-sidebar__age">
-                            <b>Adults:</b> 1
-                        </span>
-
-                        <span class="room-sidebar__age">
-                            <b>Children:</b> 1
-                        </span>
-                    </div>
-
-                    <button
-                        class="room-sidebar__btn btn btn_gradient"
-                        type="button"
-                        >
-
-                        Book now
-                    </button>
-                </div>
-
-                <div class="room__features">
-                    <h3 class="room-features__title">Features</h3>
-
-                    <ul class="room-features__list">
-                        <li class="room-features__item">
-                            Conditioneer
-                        </li>
-
-                        <li class="room-features__item">
-                            Hair Brush
-                        </li>
-
-                        <li class="room-features__item">
-                            Towel
-                        </li>
-
-                        <li class="room-features__item">
-                            Mini Bar
-                        </li>
-
-                        <li class="room-features__item">
-                            Pet Friendly
-                        </li>
-
-                        <li class="room-features__item">
-                            Sleepwear
-                        </li>
-
-                        <li class="room-features__item">
-                            Shampoo
-                        </li>
-
-                        <li class="room-features__item">
-                            Parking Place
-                        </li>
-
-                        <li class="room-features__item">
-                            Free Wi-Fi
-                        </li>
-
-                        <li class="room-features__item">
-                            Shaving Razor
-                        </li>
-
-                        <li class="room-features__item">
-                            Shower Gel
-                        </li>
-
-                        <li class="room-features__item">
-                            Free SPA Certificate
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -307,180 +287,22 @@
         <section class="availability">
             <div class="container">
                 <h2 class="availability__title title title_center">
-                    availability
+                    Available Dates
                 </h2>
 
                 <div class="availability__carousel carousel owl-theme owl-carousel js-carousel-availability">
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="January"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="February"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="March"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="April"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="May"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="June"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="July"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="August"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="September"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="October"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="November"
-                            >
-                    </div>
-
-                    <div class="availability__item item">
-                        <input
-                            class="availability__field js-datepickr-inline"
-                            type="date"
-                            name="December"
-                            >
-                    </div>
+                    Date pickers
                 </div>
 
-                <button class="availability__btn btn" type="button">
+                <button class="availability__btn btn btn_gradient" type="button">
                     Book for £134.30 Now
                 </button>
             </div>
         </section>
 
-        <div class="rooms__map">
+        <div class="rooms__map rooms__map_lower">
             <div class="map" id="map-marker-list"></div>
         </div>
-
-        <section class="blog blog_other blog_transparent">
-            <div class="container">
-                <h2 class="blog__title title">
-                    More Appartments
-                </h2>
-
-                <div class="blog__list">
-                    <a class="blog__item blog__item_gradient" href="/">
-                        <div class="blog__img">
-                            <img src="./img/templates/about.jpg" alt="">
-                        </div>
-
-                        <div class="blog__hidden">
-                            <div class="blog__hidden-wrap">
-                                <p class="blog__hidden-cost">
-                                    £49.99
-                                </p>
-
-                                <p class="blog__hidden-text">
-                                    Small Cozy Room
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="blog__item blog__item_gradient" href="/">
-                        <div class="blog__img">
-                            <img src="./img/templates/about.jpg" alt="">
-                        </div>
-
-                        <div class="blog__hidden">
-                            <div class="blog__hidden-wrap">
-                                <p class="blog__hidden-cost">
-                                    £49.99
-                                </p>
-
-                                <p class="blog__hidden-text">
-                                    Small Cozy Room
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="blog__item blog__item_gradient" href="/">
-                        <div class="blog__img">
-                            <img src="./img/templates/about.jpg" alt="">
-                        </div>
-
-                        <div class="blog__hidden">
-                            <div class="blog__hidden-wrap">
-                                <p class="blog__hidden-cost">
-                                    £49.99
-                                </p>
-
-                                <p class="blog__hidden-text">
-                                    Small Cozy Room
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
