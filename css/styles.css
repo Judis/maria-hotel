@@ -2495,28 +2495,21 @@ a.special-offers__img:hover ~ .special-offers__cost {
 }
 
 .room-features__item {
-    position: relative;
     display: inline-block;
     width: 50%;
-    margin-bottom: 10px;
-    padding-left: 22px;
+    margin-bottom: 14px;
     padding-right: 5px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     vertical-align: top;
 }
 
-.room-features__item:before {
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    background-color: var(--themes-elements-color);
-    background-size: 100% 100%;
-    background-position: center;
-    border-radius: 50%;
-    content: '';
+.room-features__item .fa {
+    width: 30px;
+    padding-right: 8px;
+    font-size: 19px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .room-features__title-btn {
@@ -2578,9 +2571,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
 }
 
 .availability {
-    padding-top: 53px;
     padding-bottom: 49px;
-    background-color: rgba(249, 249, 249, 0.5);
     text-align: center;
 }
 
@@ -3993,11 +3984,6 @@ a.special-offers__img:hover ~ .special-offers__cost {
         margin-bottom: 30px;
         padding-bottom: 22px;
         border-bottom: 1px solid var(--border-color);
-    }
-
-    .availability {
-        padding-top: 63px;
-        padding-bottom: 69px;
     }
 
     .availability__title {
