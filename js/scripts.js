@@ -145,8 +145,33 @@ $(function() {
         margin: 0
     });
 
+    $('.js-carousel-nav-img').owlCarousel({
+        loop: true,
+        items: 1,
+        dots: true,
+        nav: false,
+        margin: 1,
+        autoHeight: true,
+        responsive: {
+            0: {
+                margin: 0,
+                nav: false
+            },
+            768: {
+                margin: 0,
+                nav: true
+            },
+            1400: {
+                margin: 1,
+                nav: false
+            }
+        }
+    });
+
+    changeDots();
+
     $(window).resize(function() {
-        if ($(window).width() > 1023) {
+        if ($(window).width() > 767) {
             const $carouselList = $('.js-mobile-carousel');
 
             for (let i = 0; i < $carouselList.length; i++) {
@@ -188,7 +213,7 @@ $(function() {
         $($blockList[targetIndex]).addClass('is-open');
     });
 
-    if ($(window).width() > 1023) return;
+    if ($(window).width() > 767) return;
 
     $('.js-mobile-carousel').owlCarousel({
         loop: true,
@@ -198,6 +223,17 @@ $(function() {
         margin: 0
     });
 });
+
+function changeDots() {
+    const $carousel = $('.js-carousel-nav-img');
+    const $items = $carousel.find('.owl-item:not(.cloned) img');
+    const $dots = $carousel.find('.owl-dot');
+
+    $dots.each(function(i, item) {
+        const background =  $($items[i]).prop('src');
+        $(item).css('background-image', 'url("' + background + '")');
+    })
+}
 
 function initScrollbar() {
     if (!$('.js-scroll').length) return;

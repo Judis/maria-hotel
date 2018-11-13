@@ -1369,6 +1369,10 @@ select {
     color: var(--themes-elements-color);
 }
 
+.carousel__img-dots .owl-dots {
+    display: none;
+}
+
 .features {
     padding-top: 34px;
     padding-bottom: 45px;
@@ -2071,12 +2075,11 @@ a.special-offers__img:hover ~ .special-offers__cost {
 }
 
 .footer__text .footer-text__img {
-    margin-right: 6px;
+    margin-right: 2px;
     vertical-align: bottom;
 }
 
 .footer__text a {
-    padding-left: 10px;
     text-decoration: none;
 }
 
@@ -2928,9 +2931,8 @@ a.special-offers__img:hover ~ .special-offers__cost {
     }
 
     .nav__list-wrap {
-        top: 63px;
+        top: 62px;
         width: 241px;
-        border: none;
     }
 
     .nav__xs-info {
@@ -4055,7 +4057,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
     }
 
     .container {
-        max-width: 1210px;
+        max-width: 1240px;
     }
 
     .container_wide {
@@ -4170,7 +4172,7 @@ a.special-offers__img:hover ~ .special-offers__cost {
         display: inline-block;
         width: auto;
         margin-right: 36px;
-        border-top: none;
+        border: none;
     }
 
     .header__burger.is-open ~ .nav .nav__list-wrap {
@@ -4427,6 +4429,49 @@ a.special-offers__img:hover ~ .special-offers__cost {
     .room-features__item {
         display: inline-block;
         width: 33.3333333%;
+    }
+
+    .carousel__img-dots .owl-stage {
+        display: block;
+    }
+
+    .carousel__img-dots .owl-dots {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        padding-top: 5px;
+    }
+
+    .carousel__img-dots button.owl-dot,
+    .carousel__img-dots button.owl-dot.active {
+        position: relative;
+        flex-grow: 1;
+        height: 100px;
+        border-radius: 0;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        border: none;
+    }
+
+    .carousel__img-dots button.owl-dot.active:after {
+        position: absolute;
+        top: -1px;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 0;
+        height: 0;
+        margin: auto;
+        border: 17px solid transparent;
+        border-top-color: #ffffff;
+        content: '';
+    }
+
+    .carousel__img-dots button.owl-dot:not(:last-child) {
+        margin-right: 5px;
     }
 
     .features {
@@ -4686,14 +4731,14 @@ a.special-offers__img:hover ~ .special-offers__cost {
 
     .blog-post__img {
         float: left;
-        width: 48.671875%;
+        width: 51.9166666%;
         margin-left: 0;
         margin-right: 0;
     }
 
     .blog-post__wrap {
         float: right;
-        width: 51.328125%;
+        width: 48.0833334%;
         padding-left: 60px;
     }
 
