@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- Add class .header_low next to .header for header with low height -->
     <header class="header">
         <button
             class="header__burger btn btn_simple js-burger"
@@ -41,45 +42,100 @@
             <div class="header__right">
                 <div class="option header__option js-options">
                     <button class="option__text js-options-btn" type="button">
-                        £ (GBP)
+                        <span>£ (GBP)</span>
                     </button>
 
-                    <ul class="option__list">
-                        <li class="option__el">
-                            <a class="option__option" href="/">
-                                £ (GBP)
-                            </a>
-                        </li>
+                    <div class="option__list option__list_wide">
+                        <form class="option__search" action="index.html" method="post">
+                            <input
+                                type="text"
+                                name="search"
+                                value=""
+                                placeholder="Search"
+                                >
+                        </form>
+                        <ul class="option__results">
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    <span>British Pound Sterling</span>
+                                    <span>GBP</span>
+                                </a>
+                            </li>
 
-                        <li class="option__el">
-                            <a class="option__option" href="/">
-                                $ (GBP1)
-                            </a>
-                        </li>
-                    </ul>
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    <span>Euro</span>
+                                    <span>eur</span>
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    <span>Euro</span>
+                                    <span>eur</span>
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    <span>Euro</span>
+                                    <span>eur</span>
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    <span>Euro</span>
+                                    <span>eur</span>
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    <span>Euro</span>
+                                    <span>eur</span>
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    <span>Euro</span>
+                                    <span>eur</span>
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    <span>Euro</span>
+                                    <span>eur</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="option header__option js-options">
                     <button class="option__text js-options-btn" type="button">
-                        En
+                        <img src="./img/icons/eng.svg" alt="">
+                        <span>Eng</span>
                     </button>
 
                     <ul class="option__list">
                         <li class="option__el">
                             <a class="option__option" href="/">
-                                En
+                                English
                             </a>
                         </li>
 
                         <li class="option__el">
                             <a class="option__option" href="/">
-                                Fr
+                                Français
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <a class="header__link" href="/">
+                <a class="header__link header__link_membership" href="/">
                     Membership
                 </a>
             </div>
@@ -90,6 +146,7 @@
                 <img class="logo__small" src="./img/common/logo.svg" alt="logo.svg">
                 <img class="logo__medium" src="./img/common/logo-tablet.svg" alt="logo-tablet.svg">
                 <img class="logo__little" src="./img/common/logo-mobile.svg" alt="logo-mobile.svg">
+                <img class="logo__desc" src="./img/common/logo-desktop.svg" alt="logo-desktop.svg">
             </a>
         </div>
 
@@ -101,10 +158,48 @@
                             Home
                         </a>
                     </li>
-                    <li class="nav__el">
-                        <a class="nav__link" href="/">
-                            Rooms & Services
-                        </a>
+                    <li class="nav__el js-options">
+                        <button class="nav__link option__text js-options-btn" type="button">
+                            <span>Rooms & Services</span>
+                        </button>
+
+                        <ul class="option__list">
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    Family Room
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    Standart Double Room
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    Executive Double Room
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    Cosy Double For One
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    Executive Twin/Double
+                                </a>
+                            </li>
+
+                            <li class="option__el">
+                                <a class="option__option" href="/">
+                                    Lounge Bar
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav__el">
                         <a class="nav__link" href="/">
@@ -136,39 +231,94 @@
                 <div class="nav__xs-info">
                     <div class="option header__option js-options">
                         <button class="option__text js-options-btn" type="button">
-                            £ (GBP)
+                            <span>£ (GBP)</span>
                         </button>
 
-                        <ul class="option__list">
-                            <li class="option__el">
-                                <a class="option__option" href="/">
-                                    £ (GBP)
-                                </a>
-                            </li>
+                        <div class="option__list option__list_wide">
+                            <form class="option__search" action="index.html" method="post">
+                                <input
+                                    type="text"
+                                    name="search"
+                                    value=""
+                                    placeholder="Search"
+                                    >
+                            </form>
+                            <ul class="option__results">
+                                <li class="option__el">
+                                    <a class="option__option" href="/">
+                                        <span>British Pound Sterling</span>
+                                        <span>GBP</span>
+                                    </a>
+                                </li>
 
-                            <li class="option__el">
-                                <a class="option__option" href="/">
-                                    $ (GBP1)
-                                </a>
-                            </li>
-                        </ul>
+                                <li class="option__el">
+                                    <a class="option__option" href="/">
+                                        <span>Euro</span>
+                                        <span>eur</span>
+                                    </a>
+                                </li>
+
+                                <li class="option__el">
+                                    <a class="option__option" href="/">
+                                        <span>Euro</span>
+                                        <span>eur</span>
+                                    </a>
+                                </li>
+
+                                <li class="option__el">
+                                    <a class="option__option" href="/">
+                                        <span>Euro</span>
+                                        <span>eur</span>
+                                    </a>
+                                </li>
+
+                                <li class="option__el">
+                                    <a class="option__option" href="/">
+                                        <span>Euro</span>
+                                        <span>eur</span>
+                                    </a>
+                                </li>
+
+                                <li class="option__el">
+                                    <a class="option__option" href="/">
+                                        <span>Euro</span>
+                                        <span>eur</span>
+                                    </a>
+                                </li>
+
+                                <li class="option__el">
+                                    <a class="option__option" href="/">
+                                        <span>Euro</span>
+                                        <span>eur</span>
+                                    </a>
+                                </li>
+
+                                <li class="option__el">
+                                    <a class="option__option" href="/">
+                                        <span>Euro</span>
+                                        <span>eur</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="option header__option js-options">
                         <button class="option__text js-options-btn" type="button">
-                            En
+                            <img src="./img/icons/eng.svg" alt="">
+                            <span>Eng</span>
                         </button>
 
                         <ul class="option__list">
                             <li class="option__el">
                                 <a class="option__option" href="/">
-                                    En
+                                    English
                                 </a>
                             </li>
 
                             <li class="option__el">
                                 <a class="option__option" href="/">
-                                    Fr
+                                    Français
                                 </a>
                             </li>
                         </ul>
